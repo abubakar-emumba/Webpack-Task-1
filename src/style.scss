@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+$body-color: blue;
+$body-background-color: rgb(204, 224, 199);
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $body-color;
+  margin-top: 100px;
+  font-family: 'Roboto', sans-serif;
+  background-color: $body-background-color;
+}
