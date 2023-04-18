@@ -1,6 +1,6 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const CopyPlugin = require('copy-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = (_env, argv) => {
   const { mode } = argv
@@ -68,7 +68,7 @@ module.exports = (_env, argv) => {
         template: 'public/index.html',
         favicon,
       }),
-      new CopyPlugin({
+      new CopyWebpackPlugin({
         patterns: [{ from: 'public/images', to: 'assets' }],
       }),
     ],
