@@ -13,10 +13,11 @@ const Image = styled.img`
 `
 
 const App = () => (
-  <>
+  <div className='app'>
     <H1>Hello World</H1>
     <Image src={imgPath} alt='srcImage' />
-  </>
+    <img src='/react.gif' alt='react.gif' />
+  </div>
 )
 
 let container = null

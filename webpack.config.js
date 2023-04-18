@@ -69,7 +69,15 @@ module.exports = (_env, argv) => {
         favicon,
       }),
       new CopyWebpackPlugin({
-        patterns: [{ from: 'public/images', to: 'assets' }],
+        patterns: [
+          {
+            from: 'public',
+            to: '.',
+            globOptions: {
+              ignore: ['**/index.html'],
+            },
+          },
+        ],
       }),
     ],
   }
